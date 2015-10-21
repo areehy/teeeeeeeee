@@ -1,0 +1,12 @@
+public class TestPrimeTest {
+
+	@Test
+	public void test() {
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		TestPrime testPrime = new TestPrime();
+		System.out.println(testPrime.isPrime(num));
+	}
+
+}

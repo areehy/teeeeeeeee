@@ -1,0 +1,49 @@
+#define _09_UpdateUserNameOrPassword() vux__09_UpdateUserNameOrPassword()
+void Test_myclass_cpp_CMyClass::_09_UpdateUserNameOrPassword_(void)
+{
+ 
+   CMyClass* pObj = 0;
+ 
+   TEST_BEGIN_("CMyClass (MyClass.cpp)/_09_UpdateUserNameOrPassword()");
+ 
+   //$$VUNIT(BEGIN,TESTCASE/CMyClass::_09_UpdateUserNameOrPassword())
+
+    ///
+    TEST_CASE_BEGINO( ARG_DEFAULT )
+ 
+   pObj->msUserName = _TDISTR_(pObj->msUserName)/*"Kailesoft"*/;
+  
+  pObj->msPassword = _TDISTR_(pObj->msPassword)/*"123456"*/;
+  
+  SF_RETURN_STR(_TDISTRS_(NewUserName)/*"Kailesoft2"*/, "_lcl_MyString_sUserName", RUN_TIMES_ANY, 1);
+ 
+   SF_RETURN_STR(_TDISTRS_(NewPassword)/*"654321"*/, "_lcl_MyString_sPassword", RUN_TIMES_ANY, 1);
+ 
+   SF_RETURN_STR(_TDISTRS_(NewPassword2)/*"654321"*/, "_lcl_MyString_sPassword2", RUN_TIMES_ANY, 1);
+  
+  TEST_RUN pObj->_09_UpdateUserNameOrPassword();
+  
+  TEST_ASSERT_LOCAL( sql == _TDOSTR_(sql)/*"Update Users Set UserName='Kailesoft2', Password='654321' Where UserName='Kailesoft'"*/ );
+  
+  TEST_CASE_ENDO( ARG_DEFAULT )
+    //$$ [1] [Nor.] [2011-6-21 15:20:55]
+
+    /// 
+
+    BVTEST_BEGIN_0(O)
+    //自动用例，产生编译错误可屏蔽或删除
+   
+ TEST_RUN pObj->_09_UpdateUserNameOrPassword();
+   
+ //TEST_ASSERT();
+  
+  BVTEST_END0(O)
+    //$$ [2] [Aut.] [2011-6-21 15:20:55]
+
+    //$$VUNIT(END,TESTCASE/CMyClass::_09_UpdateUserNameOrPassword())
+
+  
+  TEST_RATE(1000);
+    TEST_END()
+}
+#undef _09_UpdateUserNameOrPassword

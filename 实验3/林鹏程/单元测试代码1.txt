@@ -1,0 +1,16 @@
+package te;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DemoTest {
+
+	@Test
+	public void test() {
+		Demo demo =new Demo();
+		demo.Ave(10, 20);
+		demo.Ave(10, -2);
+	}
+
+}

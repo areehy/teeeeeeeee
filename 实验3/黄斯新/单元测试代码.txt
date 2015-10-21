@@ -1,0 +1,15 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class JiaMiDemoTest {
+
+	@Test
+	public void test() {
+		JiaMiDemo jiaMiDemo=new JiaMiDemo();
+		jiaMiDemo.jiaMi(5);
+		jiaMiDemo.jiaMi(-7);
+	}
+
+}

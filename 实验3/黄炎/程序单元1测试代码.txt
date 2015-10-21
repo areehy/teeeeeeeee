@@ -1,0 +1,85 @@
+#define _12_Mcdc2(A,B,C,D,E,F,G,H,I,J,K) 
+vux__12_Mcdc2(A,B,C,D,E,F,G,H,I,J,K)
+void Test_myclass_cpp_CMyClass::_12_Mcdc2_BOOL_BOOL_BOOL_BOOL_BOOL_BOOL_BOOL_BOOL_BOOL_BOOL_BOOL(void)
+{
+   
+ CMyClass* pObj = 0;
+
+    TEST_BEGIN_("CMyClass (MyClass.cpp)/_12_Mcdc2(BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL)");
+ 
+  //$$VUNIT(BEGIN,TESTCASE/CMyClass::_12_Mcdc2(BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL))
+
+    ///
+    TEST_CASE_BEGINO( ARG_DEFAULT )
+ 
+   BOOL A = 0;
+
+    BOOL B = 0;
+ 
+   BOOL C = 0;
+  
+  BOOL D = 0;
+   
+ BOOL E = 0;
+  
+  BOOL F = 0;
+    
+BOOL G = 0;
+    
+BOOL H = 0;
+   
+ BOOL I = 0;
+    
+BOOL J = 0;
+    
+BOOL K = 0;
+   
+ A = _TDIINT_(A)/*1*/;
+  
+  B = _TDIINT_(B)/*1*/;
+  
+  C = _TDIINT_(C)/*1*/;
+ 
+   D = _TDIINT_(D)/*1*/;
+   
+ E = _TDIINT_(E)/*1*/;
+   
+ F = _TDIINT_(F)/*1*/;
+    
+G = _TDIINT_(G)/*1*/;
+   
+ H = _TDIINT_(H)/*1*/;
+    
+I = _TDIINT_(I)/*1*/;
+  
+  J = _TDIINT_(J)/*1*/;
+   
+ K = _TDIINT_(K)/*1*/;
+   
+ TEST_RUN int ret = pObj->_12_Mcdc2(A, B, C, D, E, F, G, H, I, J, K);
+ 
+   TEST_ASSERT_EQUAL_INT( ret, _TDOINT_(ret)/*1*/ );
+ 
+   TEST_CASE_ENDO( ARG_DEFAULT )
+   
+ //$$ [1] [Nor.] [2010-3-3 10:58:53]
+
+    /// 
+ 
+   BVTEST_BEGIN_11(O,int,A,R,0,int,B,R,1,int,C,R,2,int,D,R,3,int,E,R,4,int,F,R,5,int,G,R,6,int,H,R,7,int,I,R,8,int,J,R,9,int,K,R,10)
+    //自动用例，产生编译错误可屏蔽或删除
+ 
+   TEST_RUN int ret = pObj->_12_Mcdc2(A, B, C, D, E, F, G, H, I, J, K);
+    //TEST_ASSERT();
+  
+  BVTEST_END(O,11)
+    //$$ [2] [Aut.] [2010-3-3 10:58:53]
+
+    //$$VUNIT(END,TESTCASE/CMyClass::_12_Mcdc2(BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL,BOOL))
+
+  
+  TEST_RATE(1000);
+    
+TEST_END()
+}
+#undef _12_Mcdc2

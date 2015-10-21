@@ -1,0 +1,11 @@
+public class HanioTest {
+
+	@Test
+	public void test() {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		char a = 'A', b = 'B', c = 'C';
+		Hanio hanio = new Hanio();
+		hanio.hanio(n, a, b, c);
+	}
+}

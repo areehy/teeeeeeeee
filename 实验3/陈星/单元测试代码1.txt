@@ -1,0 +1,16 @@
+package ra;
+
+import junit.framework.TestCase;
+
+public class rcTest extends TestCase {
+
+  public void test()
+  {
+	  rc ezzRc = new rc();
+	  ezzRc.showAppointArea(100);
+	  ezzRc.showAppointArea(-12);
+     
+  }
+	
+
+}

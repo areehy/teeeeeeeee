@@ -1,0 +1,43 @@
+void CMyClass::_09_UpdateUserNameOrPassword()
+{
+
+    MyString sql;
+ 
+   MyString sUserName, sPassword, sPassword2;
+
+  
+  _ASSIGNR_(MyString,sUserName,sUserName/*GetDlgItemText(0x1001, sUserName);@1@*/)
+ 
+   _ASSIGNR_(MyString,sPassword,sPassword/*GetDlgItemText(0x1002, sPassword);@2@*/)
+  
+  _ASSIGNR_(MyString,sPassword2,sPassword2/*GetDlgItemText(0x1003, sPassword2);@3@*/)
+
+   
+ //其他检查用户名和密码的代码(包括sPassword是否与sPassword2相等)忽略
+    //...
+
+    //用户名和密码至少一项修改
+  
+    if(sUserName != msUserName || sPassword != msPassword)
+    {
+   
+     sql = "Update Users Set";
+    
+    if(sUserName != msUserName)
+           
+ sql += " UserName='" + sUserName + "'";
+  
+    if(sPassword != msPassword)
+           
+ sql += ", Password='" + sPassword + "'";
+        
+sql += " Where UserName='" + msUserName + "'";
+
+        
+CDataBase db;
+       
+ db.Execute(sql);
+    }
+   
+ _DUMP_(MyString,sql);
+}

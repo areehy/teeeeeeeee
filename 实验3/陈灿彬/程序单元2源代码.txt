@@ -1,0 +1,11 @@
+public class Hanio {
+	public void hanio(int n, char a, char b, char c) {
+		if(n == 1)
+	        System.out.println("move: NO." + n + "\t\t" + a + "-->" + c);
+	    else{
+	        hanio(n-1, a, c, b);
+	        System.out.println("move: NO." + n + "\t\t" + a + "-->" + c);
+	        hanio(n-1, b, a, c);
+	    }
+	}
+}

@@ -1,0 +1,13 @@
+
+package ae;
+
+import junit.framework.TestCase;
+
+public class eeeTest extends TestCase {
+public void test()
+{
+ eee k = new eee();
+  k.ezq(333);
+  k.ezq(-12);
+}
+}

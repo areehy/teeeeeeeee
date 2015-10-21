@@ -1,0 +1,27 @@
+package ae;
+import java.util.Scanner; 
+public class eee {
+
+	
+	public static void ezq(int num)
+	{
+		 int second =num;  
+		 if(num<0)
+		 {
+			 System.out.println("输入错误");
+			 return;
+		 }
+		 int hour=second/3600; 
+		 int minite=second%3600/60;  
+		 int sec=second%60; 
+		 System.out.println("转换后为："+hour+"小时："+minite+"分钟："+sec+"秒"); 
+		
+	}
+	
+	 public static void main(String[] args) 
+	 {   
+	  Scanner s=new Scanner(System.in); 
+      ezq(90);
+	}
+	 }
+	 

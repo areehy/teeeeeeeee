@@ -1,0 +1,12 @@
+int CMyClass::_12_Mcdc2(BOOL A,
+ BOOL B,BOOL C,BOOL D,BOOL E,
+BOOL F,
+BOOL G,BOOL H,BOOL I,BOOL J,BOOL K)
+{
+  
+  if(A && ( (B || C) && (D && E) ) && ( (F || G) && (H || I  || J) || K ))
+    
+    return 1;
+  
+  return 0;
+}

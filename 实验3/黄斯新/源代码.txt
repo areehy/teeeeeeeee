@@ -1,0 +1,31 @@
+public class JiaMiDemo {
+	
+		public static void jiaMi(int i) {
+			int number = i;
+			System.out.println("加密前的数字为："+number);
+			int[] arr = new int[8];
+			int index = 0;
+			while (number > 0) {
+				arr[index] = number % 10;
+				number /= 10;
+				index++;
+			}
+			for (int x = 0; x < index; x++) {
+				arr[x] += 5;
+				arr[x] %= 10;
+			}
+			int temp = arr[0];
+			arr[0] = arr[index - 1];
+			arr[index - 1] = temp;
+			System.out.print("加密后的数字为：");
+			for (int x = 0; x < index; x++) {
+				System.out.print(+arr[x]);
+			}
+			System.out.println();
+
+		}
+
+
+	
+
+}
